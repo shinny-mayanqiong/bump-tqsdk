@@ -34,7 +34,7 @@ def change_version(filename, old_ver, new_ver):
 
 def change_copyright(filename):
     data = ""
-    copyright = f"copyright = u'2018-${datetime.now().strftime('%Y')}, TianQin'\n"
+    copyright = f"copyright = u'2018-{datetime.now().strftime('%Y')}, TianQin'\n"
     with open(filename, 'r') as file:
         for line in file:
             if line.find("copyright") == 0:
